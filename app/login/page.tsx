@@ -20,6 +20,7 @@ export default function LoginPage() {
       setUser(userCredential.user);
       router.push("/"); // Redirect to home after login
     } catch (err) {
+      console.log('err in login', err)
       setError("Invalid credentials. Please try again.");
     }
   };
